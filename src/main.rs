@@ -128,6 +128,32 @@ pub fn player_movement(
             transform.translation.x = x;
             transform.translation.y = -y;
         }
+        if transform.translation.y < -350.0 {
+            //enemy.direction.y = -enemy.direction.y;
+           
+                
+            transform.translation.y = -350.0;
+            
+        }
+        if transform.translation.y > 350.0 {
+            //enemy.direction.y = -enemy.direction.y;
+           
+            transform.translation.y = 350.0;
+            
+        }
+        if transform.translation.x > 600.0 {
+            //enemy.direction.y = -enemy.direction.y;
+           
+            transform.translation.x = 600.0;
+            
+        }
+        if transform.translation.x < -600.0 {
+            //enemy.direction.y = -enemy.direction.y;
+           
+            transform.translation.x = -600.0;
+            
+            
+        }
     }
 }
 pub fn spawn_enemies(
