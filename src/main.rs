@@ -82,7 +82,7 @@ pub fn spawnPlayer(mut commands: Commands, window_query: Query<&Window, With<Pri
         // Create a TextBundle that has a Text with a list of sections.
         TextBundle::from_sections([
             TextSection::new(
-                "Score: ",
+                "Kadentsiot: ",
                 TextStyle {
                     
                     font_size: 60.0,
